@@ -80,23 +80,6 @@ int main(int argc, char **argv) {
 		exit(EXIT_FAILURE);
 	}
 	
-	for(;;){
-		putchar('\a');
-
-		int ch = fgetc(rand);
-
-		if(ch == EOF){
-			clearerr(rand);
-			rewind(rand);
-			continue;
-		}
-
-		printf("\x1b[48;5;%dm ", ch);
-		fflush(stdout);
-
-	}
-	fclose(rand);
-	
 	// CALCULATE
 	if(dream_probability > 6){
 		// attempt to wake the user up using sensory overload.
