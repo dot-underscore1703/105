@@ -81,7 +81,7 @@ int main(int argc, char **argv) {
 	}
 	
 	// CALCULATE
-	if(dream_probability > 6){
+	if(dream_probability > 5){
 		// attempt to wake the user up using sensory overload.
 		// we will also make this taxing on the dreamt computer by continously reopening the file
 		// to try and break the experience.
